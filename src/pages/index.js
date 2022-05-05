@@ -66,11 +66,11 @@ export default function Home({ setSLettersOpts = {}, scrollPosition, callback })
       if (
          scrollPosition >=
          document.body.clientHeight - window.innerHeight * 1.50
+         ||
+         scrollPosition < window.innerHeight / 10
       ) {
          setSLettersOpts(lettersState1);
          // console.log("a")
-      } else if (scrollPosition < window.innerHeight / 10) {
-         setSLettersOpts(lettersState1);
       } else {
          setSLettersOpts(lettersState2);
       }
