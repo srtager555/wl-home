@@ -4,13 +4,14 @@ const nextConfig = {
   env: {
     customKey: 'customKey',
   },
-  basePath: '/dist',
+  // basePath: '/.',
   compress: true,
   async redirects() {
     return [
       {
-        source: '/documentation',
-        destination: '/docs',
+        source: '/docs',
+        destination: '/documentation',
+        permanent: true,
       }
     ]
   }
