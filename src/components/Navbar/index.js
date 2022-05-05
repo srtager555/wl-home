@@ -52,10 +52,12 @@ export function Navbar({ path, scrollPosition, sideNavRef }) {
     switch (path) {
       case '/':
         setNavState(b);
+        setIsVisible(false);
         break;
 
       case '':
         setNavState(b);
+        setIsVisible(false);
         break;
 
       default:
