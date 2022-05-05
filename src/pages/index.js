@@ -68,6 +68,7 @@ export default function Home({ setSLettersOpts = {}, scrollPosition, callback })
          document.body.clientHeight - window.innerHeight * 1.50
       ) {
          setSLettersOpts(lettersState1);
+         // console.log("a")
       } else if (scrollPosition < window.innerHeight / 10) {
          setSLettersOpts(lettersState1);
       } else {
@@ -88,6 +89,7 @@ export default function Home({ setSLettersOpts = {}, scrollPosition, callback })
             component={e[0]}
             code={e[1]}
             color={colorArr[index]}
+            key={`container__${index}`}
          />
       );
    });

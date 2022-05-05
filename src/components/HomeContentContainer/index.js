@@ -5,7 +5,7 @@ import { HomeContentItem } from "@components/HomeContentItem";
 
 import style from "@styles/HomeContent.module.scss";
 
-export function HomeContentContainer({ component, code, color }) {
+export function HomeContentContainer({ component, code, color, ...key }) {
    const contentRef = useRef(null);
 
    function handleObserProjects(entries) {
@@ -36,7 +36,7 @@ export function HomeContentContainer({ component, code, color }) {
    }, [contentRef]);
 
    return (
-      <div className={style["HomeContentContainer--main"]}>
+      <div {...key} className={style["HomeContentContainer--main"]}>
          <div ref={contentRef} className={style["HomeContentContainer--main__content"]}>
             <HomeContentItem title={component[0]} description={component[1]} />
             <HomeContentCode code={code} color={color} />
