@@ -53,7 +53,7 @@ export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
          <div
             className={`${style["container__SlideLetters--slideLetter"]} ${
                slide1[0] ? "" : style.hidden
-            }${slide1[1] ? "" : style.opacity}`}
+            } ${slide1[1] ? "" : style.opacity}`}
          >
             <span>
                Wrapping Letters Wrapping Letters Wrapping Letters Wrapping
@@ -66,8 +66,8 @@ export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
          </div>
          <div
             className={`${style["container__SlideLetters--slideLetter"]} ${
-               slide1[0] ? "" : style.hidden
-            }${slide1[1] ? "" : style.opacity}`}
+               slide2[0] ? "" : style.hidden
+            } ${slide2[1] ? "" : style.opacity}`}
          >
             <span>
                Wrapping Letters Wrapping Letters Wrapping Letters Wrapping
@@ -80,8 +80,8 @@ export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
          </div>
          <div
             className={`${style["container__SlideLetters--slideLetter"]} ${
-               slide1[0] ? "" : style.hidden
-            }${slide1[1] ? "" : style.opacity}`}
+               slide3[0] ? "" : style.hidden
+            } ${slide3[1] ? "" : style.opacity}`}
          >
             <span>
                Wrapping Letters Wrapping Letters Wrapping Letters Wrapping
@@ -94,8 +94,8 @@ export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
          </div>
          <div
             className={`${style["container__SlideLetters--slideLetter"]} ${
-               slide1[0] ? "" : style.hidden
-            }${slide1[1] ? "" : style.opacity}`}
+               slide4[0] ? "" : style.hidden
+            } ${slide4[1] ? "" : style.opacity}`}
          >
             <span>
                Wrapping Letters Wrapping Letters Wrapping Letters Wrapping
@@ -108,8 +108,8 @@ export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
          </div>
          <div
             className={`${style["container__SlideLetters--slideLetter"]} ${
-               slide1[0] ? "" : style.hidden
-            }${slide1[1] ? "" : style.opacity}`}
+               slide5[0] ? "" : style.hidden
+            } ${slide5[1] ? "" : style.opacity}`}
          >
             <span>
                Wrapping Letters Wrapping Letters Wrapping Letters Wrapping
@@ -122,8 +122,8 @@ export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
          </div>
          <div
             className={`${style["container__SlideLetters--slideLetter"]} ${
-               slide1[0] ? "" : style.hidden
-            }${slide1[1] ? "" : style.opacity}`}
+               slide6[0] ? "" : style.hidden
+            } ${slide6[1] ? "" : style.opacity}`}
          >
             <span>
                Wrapping Letters Wrapping Letters Wrapping Letters Wrapping
