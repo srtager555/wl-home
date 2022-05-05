@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
+
+import style from "@styles/Documentation.module.scss";
 
 // This container is maded for the section "documentation"
 
@@ -6,17 +8,17 @@ export function TitleContainer({ title, type = "h2" }) {
    const [titleType, setTitleType] = useState(type);
 
    const h2 = (
-      <div className="documentation--container__title">
+      <div className={style["documentation--container__title"]}>
          <h2>{title}</h2>
       </div>
    )
    const h3 = (
-      <div className="documentation--container__title">
+      <div className={style["documentation--container__title"]}>
          <h3>{title}</h3>
       </div>
    )
    const h4 = (
-      <div className="documentation--container__title">
+      <div className={style["documentation--container__title"]}>
          <h4>{title}</h4>
       </div>
    )

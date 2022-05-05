@@ -1,4 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
+
+import style from "@styles/Documentation.module.scss";
+import sideBarStyle from "@styles/SideBarDocs.module.scss";
 
 export function SectionContainerDocs({
    children,
@@ -9,15 +12,16 @@ export function SectionContainerDocs({
 
    function handleObserveDoc(entries) {
       const [entry] = entries;
+      console.log(anchorRef)
 
-      let anchorVinculed = Object.entries(anchorRef.current.childNodes).filter(
+      let anchorVinculed = Object?.entries(anchorRef?.current?.childNodes).filter(
          (e) => e[1].children[0].hash.slice(1) === observerObj.current.id
       );
 
       if (entry.isIntersecting) {
-         anchorVinculed[0][1].className += " active";
+         anchorVinculed[0][1].className += ` ${sideBarStyle.active}`;
       } else {
-         anchorVinculed[0][1].className = "sideBar__docs-container__anchor"
+         anchorVinculed[0][1].className = sideBarStyle["sideBar__docs-container__anchor"]
       }
    }
 
@@ -46,7 +50,7 @@ export function SectionContainerDocs({
       <div
          ref={observerObj}
          id={`${sectionClass != "" ? `${sectionClass}` : ""}`}
-         className="documentation--container__main"
+         className={style["documentation--container__main"]}
       >
          {children}
       </div>

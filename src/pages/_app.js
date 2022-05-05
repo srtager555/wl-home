@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 
 import { useInPath } from '@hooks/useInPath';
 import { useScrollPosition } from '@hooks/useScrollPosition/useScrollPosition';

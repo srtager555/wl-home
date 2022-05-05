@@ -1,8 +1,8 @@
-import React from "react";
+import style from "@styles/Documentation.module.scss";
 
 export function CodeContainer({ code }) {
    return (
-      <div className="documentation--container__code">
+      <div className={style["documentation--container__code"]}>
          <pre>
             <code>{code}</code>
          </pre>

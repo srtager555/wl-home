@@ -1,11 +1,12 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
-import { TitleContainer } from "@Components/titleContainer";
-import { ParagraphContainer as Parag } from "@Components/paragraphContainer";
-import { ImageContainer } from "@Components/imageContainer";
-import { CodeContainer } from "@Components/codeContainer";
+import { TitleContainer } from "@components/titleContainer";
+import { ParagraphContainer as Parag } from "@components/paragraphContainer";
+import { ImageContainer } from "@components/imageContainer";
+import { CodeContainer } from "@components/codeContainer";
 
-import "@Styles/Documentation.css";
+import style from "@styles/Documentation.module.scss";
+
 import { SectionContainerDocs } from "../../components/SectionContainerDocs";
 
 export function Documentation({ callback, anchorRef, setSLettersOpts }) {
@@ -29,7 +30,7 @@ export function Documentation({ callback, anchorRef, setSLettersOpts }) {
    }, []);
 
    return (
-      <div className="documentation--container">
+      <div className={style["documentation--container"]}>
          <SectionContainerDocs
             anchorRef={anchorRef}
             sectionClass="getting-started"
