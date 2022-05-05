@@ -8,7 +8,7 @@ export function HomeContentCode({ code, color }) {
    const codeRef = useRef(null);
 
    return (
-      <div className={[style.HomeContentCode__container, style['HomeContentColor' + color]]}>
+      <div className={`${style.HomeContentCode__container} ${style['HomeContentColor' + color]}`}>
          <button
             className={style["HomeContentCode__container--buttonCopy"]}
             onClick={() => useCopy(codeRef)}
