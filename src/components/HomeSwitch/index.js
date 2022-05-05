@@ -37,7 +37,7 @@ export function HomeSwitch({ bottom = false }) {
 
   return (
     <>
-      <div ref={contentRef} className={`container ${styleHomePage['HomePage--container']}`}>
+      <div ref={contentRef} className={`${styleHomePage['HomePage--container']}`}>
         <div className={styleHomePage['HomePage--container-main']}>
           <div
             className={
