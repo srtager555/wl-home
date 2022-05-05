@@ -48,7 +48,6 @@ export function Navbar({ path, scrollPosition, sideNavRef }) {
   }, [scrollPosition]);
 
   useEffect(() => {
-    console.log(path);
     switch (path) {
       case '/':
         setNavState(b);
