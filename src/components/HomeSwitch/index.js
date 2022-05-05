@@ -78,7 +78,7 @@ function topLinks() {
       {/* <Link href="docs/getting-started" className={styleHomePage["HomePage--cta-link"]}>
             <span className={styleHomePage["HomePage--cta-link-text"]}>Getting Started</span>
          </Link> */}
-      <Link href="docs/">
+      <Link href="documentation/">
         <a className={styleHomePage['HomePage--cta-link']}>
           <span className={styleHomePage['HomePage--cta-link-text']}>Documentation</span>
         </a>
@@ -104,7 +104,7 @@ function bottomLinks() {
       {/* <Link href="docs/getting-started" className={styleHomePage["HomePage--cta-link"]}>
             <span className={styleHomePage["HomePage--cta-link-text"]}>Getting Started</span>
          </Link> */}
-      <Link href="docs/">
+      <Link href="documentation/">
         <a className={styleHomePage['HomePage--cta-link']}>
           <span className={styleHomePage['HomePage--cta-link-text']}>Documentation</span>
         </a>
