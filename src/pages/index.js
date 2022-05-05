@@ -5,7 +5,6 @@ import { arrContent } from "../context/HomeContentList";
 import { HomeContentContainer } from "@components/HomeContentContainer";
 
 import styleHomePage from "@styles/HomePage.module.scss";
-import styleHomePageSec from "@styles/HomePageSections.module.scss";
 
 export default function Home({ setSLettersOpts = {}, scrollPosition, callback }) {
    const [colorCounter, setColorCounter] = useState(0);

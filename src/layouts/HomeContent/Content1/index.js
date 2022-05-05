@@ -1,6 +1,8 @@
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import WL from "wrapping-letters-react";
 import anime from "animejs";
+
+import style from "@styles/HomePageSections.module.scss";
 
 function Container() {
    const letterContainer = useRef(null);
@@ -17,7 +19,7 @@ function Container() {
    }, []);
 
    return (
-      <div ref={letterContainer} className="letter-container">
+      <div ref={letterContainer} className={style["letter-container"]}>
          <WL
             word="Wrapp any letter is easy"
          />

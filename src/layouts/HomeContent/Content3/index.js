@@ -1,26 +1,28 @@
 import React from "react";
 import WL from "wrapping-letters-react";
 
+import style from "@styles/HomePageSections.module.scss";
+
 function Container() {
    function ReactComponent({ letter, cssClass, ...props }) {
       return (
-         <div className={`container-letter ${cssClass}`} {...props}>
-            <span className={`letter-wrapp ${cssClass}`}>{letter}</span>
+         <div className={`${style["container-letter"]} ${cssClass}`} {...props}>
+            <span className={`${style["letter-wrapp"]} ${cssClass}`}>{letter}</span>
          </div>
       );
    }
 
    return (
-      <div className="letter-container">
+      <div className={style["letter-container"]}>
          <WL
             word="Create the packaging of your choice"
             wordOptions={[
                {
-                  ClassToAdd: "letter-wrapp",
+                  ClassToAdd: style["letter-wrapp"],
 
                   SelectClass: {
-                     wordToSearch: "packaging ",
-                     classToAdd: "pack-letter",
+                     wordToSearch: "packaging",
+                     classToAdd: style["pack-letter"],
                   },
                   PerWord: true,
                },
@@ -62,7 +64,7 @@ return (
                     ClassToAdd: "letter-wrapp",
 
                     SelectClass: {
-                        wordToSearch: "packaging ",
+                        wordToSearch: "packaging",
                         classToAdd: "pack-letter",
                     },
                     PerWord: true,

@@ -24,18 +24,7 @@ body {
   transition: 500ms;
 }
 
-body.HomeContentColor0 {
-  background-color: var(--main-color);
-}
-body.HomeContentColor1 {
-  background-color: var(--secondary-color-green);
-}
-body.HomeContentColor2 {
-  background-color: var(--secondary-color-red);
-}
-body.HomeContentColor3 {
-  background-color: var(--secondary-color-blue);
-}
+
 
 .container {
   height: 100vh;

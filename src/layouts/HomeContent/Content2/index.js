@@ -1,19 +1,20 @@
-import React from "react";
 import WL from "wrapping-letters-react";
+
+import style from "@styles/HomePageSections.module.scss";
 
 function Container() {
 
    return (
-      <div className="letter-container">
+      <div className={style["letter-container"]}>
          <WL
             word="Add general class and special class"
             wordOptions={[
                {
-                  ClassToAdd: "letter-wrapp",
+                  ClassToAdd: style["letter-wrapp"],
 
                   SelectClass: {
                      wordToSearch: "class",
-                     classToAdd: "bold-letter",
+                     classToAdd: style["bold-letter"],
                   },
                },
             ]}
