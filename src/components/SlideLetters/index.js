@@ -49,11 +49,11 @@ export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
    }, [scrollPosition]);
 
    return (
-      <div className="container container__SlideLetters">
+      <div className={`${style.container} ${style.container__SlideLetters}`}>
          <div
-            className={`container__SlideLetters--slideLetter${
-               slide1[0] ? "" : " hidden"
-            }${slide1[1] ? "" : " opacity"}`}
+            className={`${style["container__SlideLetters--slideLetter"]} ${
+               slide1[0] ? "" : style.hidden
+            }${slide1[1] ? "" : style.opacity}`}
          >
             <span>
                Wrapping Letters Wrapping Letters Wrapping Letters Wrapping
@@ -65,9 +65,9 @@ export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
             </span>
          </div>
          <div
-            className={`container__SlideLetters--slideLetter${
-               slide2[0] ? "" : " hidden"
-            }${slide2[1] ? "" : " opacity"}`}
+            className={`${style["container__SlideLetters--slideLetter"]} ${
+               slide1[0] ? "" : style.hidden
+            }${slide1[1] ? "" : style.opacity}`}
          >
             <span>
                Wrapping Letters Wrapping Letters Wrapping Letters Wrapping
@@ -79,9 +79,9 @@ export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
             </span>
          </div>
          <div
-            className={`container__SlideLetters--slideLetter${
-               slide3[0] ? "" : " hidden"
-            }${slide3[1] ? "" : " opacity"}`}
+            className={`${style["container__SlideLetters--slideLetter"]} ${
+               slide1[0] ? "" : style.hidden
+            }${slide1[1] ? "" : style.opacity}`}
          >
             <span>
                Wrapping Letters Wrapping Letters Wrapping Letters Wrapping
@@ -93,9 +93,9 @@ export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
             </span>
          </div>
          <div
-            className={`container__SlideLetters--slideLetter${
-               slide4[0] ? "" : " hidden"
-            }${slide4[1] ? "" : " opacity"}`}
+            className={`${style["container__SlideLetters--slideLetter"]} ${
+               slide1[0] ? "" : style.hidden
+            }${slide1[1] ? "" : style.opacity}`}
          >
             <span>
                Wrapping Letters Wrapping Letters Wrapping Letters Wrapping
@@ -107,9 +107,9 @@ export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
             </span>
          </div>
          <div
-            className={`container__SlideLetters--slideLetter${
-               slide5[0] ? "" : " hidden"
-            }${slide5[1] ? "" : " opacity"}`}
+            className={`${style["container__SlideLetters--slideLetter"]} ${
+               slide1[0] ? "" : style.hidden
+            }${slide1[1] ? "" : style.opacity}`}
          >
             <span>
                Wrapping Letters Wrapping Letters Wrapping Letters Wrapping
@@ -121,9 +121,9 @@ export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
             </span>
          </div>
          <div
-            className={`container__SlideLetters--slideLetter${
-               slide6[0] ? "" : " hidden"
-            }${slide6[1] ? "" : " opacity"}`}
+            className={`${style["container__SlideLetters--slideLetter"]} ${
+               slide1[0] ? "" : style.hidden
+            }${slide1[1] ? "" : style.opacity}`}
          >
             <span>
                Wrapping Letters Wrapping Letters Wrapping Letters Wrapping
