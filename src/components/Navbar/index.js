@@ -71,7 +71,7 @@ export function Navbar({ path, scrollPosition, sideNavRef }) {
    return (
       <>
          <nav
-            className={`navbar-container${isVisible ? " show" : ""}${
+            className={`${style["navbar-container"]} ${isVisible ? style.show : ""}${
                path != "/" ? " docs" : ""
             } `}
          >
@@ -82,35 +82,35 @@ export function Navbar({ path, scrollPosition, sideNavRef }) {
                   <span className="wrapping-letters--logo">WL</span>
                </Link>
             )}
-            <div className="navbar-container__content">
+            <div className={style["navbar-container__content"]}>
                {/* <Link href="">Getting started</Link> */}
                {navContent(navState)}
                <div
-                  className={`navbar-menu__button${
-                     openMobileMenu ? " active" : ""
+                  className={`${style["navbar-menu__button"]} ${
+                     openMobileMenu ? style.active : ""
                   }`}
                   onClick={handleActiveMobileMenu}
                >
-                  <span className="navbar-menu__button--line"></span>
-                  <span className="navbar-menu__button--line"></span>
+                  <span className={style["navbar-menu__button--line"]}></span>
+                  <span className={style["navbar-menu__button--line"]}></span>
                </div>
             </div>
          </nav>
          {path === "/docs" || path === "/docs/" ? (
             <div
-               className={`sideBar__docs-container${
+               className={`${sideBarStyle["sideBar__docs-container"]} ${
                   openMobileMenu ? " active" : ""
                }`}
             >
-               <div className="sideBar__docs-dark__Background"></div>
-               <div ref={sideNavRef} className="sideBar__docs-container__links">
-                  <div className="sideBar__docs-container__anchor">
+               <div className={sideBarStyle["sideBar__docs-dark__Background"]}></div>
+               <div ref={sideNavRef} className={sideBarStyle["sideBar__docs-container__links"]}>
+                  <div className={sideBarStyle["sideBar__docs-container__anchor"]}>
                      <a onClick={handleActiveMobileMenu} href="#getting-started">Getting Started</a>
                   </div>
-                  <div className="sideBar__docs-container__anchor">
+                  <div className={sideBarStyle["sideBar__docs-container__anchor"]}>
                      <a onClick={handleActiveMobileMenu} href="#word-options">wordOptions</a>
                   </div>
-                  <div className="sideBar__docs-container__anchor">
+                  <div className={sideBarStyle["sideBar__docs-container__anchor"]}>
                      <a onClick={handleActiveMobileMenu} href="#structure">structure</a>
                   </div>
                </div>
