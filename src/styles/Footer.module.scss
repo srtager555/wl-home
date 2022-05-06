@@ -1,4 +1,4 @@
-.footer--container {
+.container--main {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -10,22 +10,20 @@
     margin-bottom: 10px;
     border-top: 1px solid #fff;
 }
-.footer--container .footer--image {
+.container--main .portfolio__image {
     height: 100px;
 }
-.footer--container .footer--image a{
+.container--main .portfolio__image a{
+    position: relative;
     display: inline-block;
     height: 100%;
+    width: calc(100px * 1.7);
 }
-.footer--container .footer--image a img{
-    height: 100%;
-}
-.footer--container span{
+.container--main span{
     font-family: "Noto Sans Display";
 }
 
-.footer--text {
+.text--main {
     display: flex;
     flex-direction: column;
-
 }
