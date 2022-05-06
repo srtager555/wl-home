@@ -4,7 +4,9 @@ const nextConfig = {
   env: {
     customKey: 'customKey',
   },
-  // basePath: '/.',
+  images: {
+    domains: ['i.ibb.co'],
+  },
   compress: true,
   async redirects() {
     return [
