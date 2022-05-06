@@ -6,6 +6,7 @@
          "@hooks/*": ["hooks/*"],
          "@styles/*": ["styles/*"],
          "@layouts/*": ["layouts/*"],
+         "@templates/*": ["templates/*"],
          "@components/*": ["components/*"]
       }
    }
