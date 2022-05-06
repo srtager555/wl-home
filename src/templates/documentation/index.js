@@ -32,7 +32,7 @@ export function Documentation({ callback, anchorRef, setSLettersOpts }) {
   }, []);
 
   return (
-    <div className={style['documentation--container']}>
+    <div className={style['container__main']}>
       <SectionContainerDocs anchorRef={anchorRef} sectionClass="getting-started">
         <TitleContainer title="Getting startted" />
         <Parag text={`Wrapping Letters is easy to use!.`} />

@@ -1,4 +1,4 @@
-.documentation--container {
+.container__main {
    width: 100%;
    display: flex;
    align-items: center;
@@ -6,32 +6,32 @@
    padding-bottom: 100px;
 }
 
-.documentation--container__main {
+.container__main--content {
    width: 90%;
    max-width: 680px;
    padding-top: 100px;
    /* margin-bottom: 100px; */
 }
 
-.documentation--container__main .documentation--container__title {
+.container__main--content .container__title {
    margin-bottom: 20px;
    font-family: "Poppins";
    font-size: 36px;
 }
-.documentation--container__main .documentation--container__title h2 {
+.container__main--content .container__title h2 {
    display: inline-block;
    position: relative;
    font-size: inherit;
    font-weight: 300;
 }
-.documentation--container__main .documentation--container__title h3 {
+.container__main--content .container__title h3 {
    display: inline-block;
    position: relative;
    font-size: inherit;
    font-weight: 300;
    font-size: 25px;
 }
-.documentation--container__main .documentation--container__title h4 {
+.container__main--content .container__title h4 {
    display: inline-block;
    position: relative;
    font-size: inherit;
@@ -39,8 +39,8 @@
    font-family: "Noto Sans Display";
    font-size: 20px;
 }
-.documentation--container__main h2::before, 
-.documentation--container__main h3::before
+.container__main--content h2::before, 
+.container__main--content h3::before
 {
    content: "";
    position: absolute;
@@ -50,40 +50,40 @@
    height: 2px;
    background-color: #fff;
 }
-.documentation--container__main p {
+.container__main--content p {
    font-family: "Noto Sans Display";
    font-weight: 300;
    line-height: 25px;
    margin-bottom: 30px;
 }
 
-.documentation--container__image {
+.container__image {
    width: 100%;
    margin-bottom: 30px;
 }
-.documentation--container__image img {
+.container__image img {
    width: 100%;
 }
 
-.documentation--container__code {
+.container__code {
    padding: 20px;
    margin-bottom: 30px;
    background-color: #0005;
    border-radius: 3px;
 }
-.documentation--container__code code {
+.container__code code {
    font-size: 16px;
    font-family: "Source Code Pro";
 }
 
 @media (min-width: 1100px) {
-   .documentation--container {
+   .container {
       align-items: flex-end;
       padding-right: 10%;
    }
 }
 @media (min-width: 1280px) {
-   .documentation--container {
+   .container {
       align-items: center;
       padding-right: 0px;
    }

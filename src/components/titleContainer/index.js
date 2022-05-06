@@ -8,17 +8,17 @@ export function TitleContainer({ title, type = "h2" }) {
    const [titleType, setTitleType] = useState(type);
 
    const h2 = (
-      <div className={style["documentation--container__title"]}>
+      <div className={style["container__title"]}>
          <h2>{title}</h2>
       </div>
    )
    const h3 = (
-      <div className={style["documentation--container__title"]}>
+      <div className={style["container__title"]}>
          <h3>{title}</h3>
       </div>
    )
    const h4 = (
-      <div className={style["documentation--container__title"]}>
+      <div className={style["container__title"]}>
          <h4>{title}</h4>
       </div>
    )

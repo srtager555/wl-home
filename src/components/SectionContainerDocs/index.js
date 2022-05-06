@@ -46,7 +46,7 @@ export function SectionContainerDocs({ children, sectionClass = '', anchorRef })
     <div
       ref={observerObj}
       id={`${sectionClass != '' ? `${sectionClass}` : ''}`}
-      className={style['documentation--container__main']}
+      className={style['container__main--content']}
     >
       {children}
     </div>
