@@ -7,6 +7,7 @@
          "@styles/*": ["styles/*"],
          "@layouts/*": ["layouts/*"],
          "@templates/*": ["templates/*"],
+         "@context/*": ["context/*"],
          "@components/*": ["components/*"]
       }
    }
