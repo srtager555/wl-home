@@ -94,7 +94,7 @@ export function Home({ setSLettersOpts = {}, scrollPosition, callback }) {
    });
 
    return (
-      <div className={styleHomePage.HomePage__main}>
+      <div className={styleHomePage.container__main}>
          <HomeSwitch />
          {e}
          <HomeSwitch bottom={true} />

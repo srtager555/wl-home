@@ -36,8 +36,8 @@ export function HomeContentContainer({ component, code, color, ...key }) {
    }, [contentRef]);
 
    return (
-      <div {...key} className={style["HomeContentContainer--main"]}>
-         <div ref={contentRef} className={style["HomeContentContainer--main__content"]}>
+      <div {...key} className={style["container--main"]}>
+         <div ref={contentRef} className={style["container--main__content"]}>
             <HomeContentItem title={component[0]} description={component[1]} />
             <HomeContentCode code={code} color={color} />
          </div>

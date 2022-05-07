@@ -37,15 +37,17 @@ export function HomeSwitch({ bottom = false }) {
 
   return (
     <>
-      <div ref={contentRef} className={`${styleHomePage['HomePage--container']}`}>
-        <div className={styleHomePage['HomePage--container-main']}>
+      <div ref={contentRef} className={`${styleHomePage['container--content']}`}>
+        <div className={styleHomePage['container--content__main']}>
           <div
             className={
-              !bottom ? styleHomePage['HomePage--introduction'] : `${styleHomePage['HomePage--introduction']} bottom`
+              !bottom
+                ? styleHomePage['container--content__introduction']
+                : `${styleHomePage['container--content__introduction']} ${styleHomePage.bottom}`
             }
           >
             <span className="wrapping-letters--logo">WL</span>
-            <div className={styleHomePage['HomePage--introducion-text']}>
+            <div className={styleHomePage['container--content__introducion--text']}>
               <p>
                 {!bottom
                   ? `Wrapp any text in your projects in React with Wrapping Letters,
@@ -56,15 +58,23 @@ export function HomeSwitch({ bottom = false }) {
               </p>
             </div>
           </div>
-          <div className={!bottom ? styleHomePage['HomePage--cta'] : `${styleHomePage['HomePage--cta']} ${styleHomePage['bottom']}`}>
+          <div
+            className={
+              !bottom
+                ? styleHomePage['container--content__cta']
+                : `${styleHomePage['container--content__cta']} ${styleHomePage['bottom']}`
+            }
+          >
             <button
               onClick={() => useCopy(buttonCopyRef)}
               ref={buttonCopyRef}
-              className={styleHomePage['HomePage--cta-copyButton']}
+              className={styleHomePage['container--content__cta--copyButton']}
             >
               npm install wrapping-letters-react -D
             </button>
-            <div className={styleHomePage[`HomePage--cta-links`]}>{!bottom ? topLinks() : bottomLinks()}</div>
+            <div className={styleHomePage[`container--content__cta--links`]}>
+              {!bottom ? topLinks() : bottomLinks()}
+            </div>
           </div>
         </div>
       </div>
@@ -75,25 +85,25 @@ export function HomeSwitch({ bottom = false }) {
 function topLinks() {
   return (
     <>
-      {/* <Link href="docs/getting-started" className={styleHomePage["HomePage--cta-link"]}>
-            <span className={styleHomePage["HomePage--cta-link-text"]}>Getting Started</span>
+      {/* <Link href="docs/getting-started" className={styleHomePage["container--content__cta--link"]}>
+            <span className={styleHomePage["container--content__cta--link-text"]}>Getting Started</span>
          </Link> */}
       <Link href="/documentation">
-        <a className={styleHomePage['HomePage--cta-link']}>
-          <span className={styleHomePage['HomePage--cta-link-text']}>Documentation</span>
+        <a className={styleHomePage['container--content__cta--link']}>
+          <span className={styleHomePage['container--content__cta--link-text']}>Documentation</span>
         </a>
       </Link>
-      {/* <Link href="docs/examples" className={styleHomePage["HomePage--cta-link"]}>
-          <span className={styleHomePage["HomePage--cta-link-text"]}>Examples</span>
+      {/* <Link href="docs/examples" className={styleHomePage["container--content__cta--link"]}>
+          <span className={styleHomePage["container--content__cta--link-text"]}>Examples</span>
       </Link>
-      <Link href="docs/api" className={styleHomePage["HomePage--cta-link"]}>
-          <span className={styleHomePage["HomePage--cta-link-text"]}>API</span>
+      <Link href="docs/api" className={styleHomePage["container--content__cta--link"]}>
+          <span className={styleHomePage["container--content__cta--link-text"]}>API</span>
       </Link>
-      <Link href="docs/support" className={styleHomePage["HomePage--cta-link"]}>
-          <span className={styleHomePage["HomePage--cta-link-text"]}>Support</span>
+      <Link href="docs/support" className={styleHomePage["container--content__cta--link"]}>
+          <span className={styleHomePage["container--content__cta--link-text"]}>Support</span>
       </Link>
-      <Link href="docs/changelog" className={styleHomePage["HomePage--cta-link"]}>
-          <span className={styleHomePage["HomePage--cta-link-text"]}>Changelog</span>
+      <Link href="docs/changelog" className={styleHomePage["container--content__cta--link"]}>
+          <span className={styleHomePage["container--content__cta--link-text"]}>Changelog</span>
       </Link>  */}
     </>
   );
@@ -101,33 +111,36 @@ function topLinks() {
 function bottomLinks() {
   return (
     <>
-      {/* <Link href="docs/getting-started" className={styleHomePage["HomePage--cta-link"]}>
-            <span className={styleHomePage["HomePage--cta-link-text"]}>Getting Started</span>
+      {/* <Link href="docs/getting-started" className={styleHomePage["container--content__cta--link"]}>
+            <span className={styleHomePage["container--content__cta--link-text"]}>Getting Started</span>
          </Link> */}
       <Link href="/documentation">
-        <a className={styleHomePage['HomePage--cta-link']}>
-          <span className={styleHomePage['HomePage--cta-link-text']}>Documentation</span>
+        <a className={styleHomePage['container--content__cta--link']}>
+          <span className={styleHomePage['container--content__cta--link-text']}>Documentation</span>
         </a>
       </Link>
-      {/* <Link href="docs/versions" className={styleHomePage["HomePage--cta-link"]}>
-            <span className={styleHomePage["HomePage--cta-link-text"]}>Versions</span>
+      {/* <Link href="docs/versions" className={styleHomePage["container--content__cta--link"]}>
+            <span className={styleHomePage["container--content__cta--link-text"]}>Versions</span>
          </Link> */}
       <a
         href="https://www.npmjs.com/package/wrapping-letters-react"
         target="_blank"
-        className={styleHomePage['HomePage--cta-link']}
+        className={styleHomePage['container--content__cta--link']}
       >
-        <span className={styleHomePage['HomePage--cta-link-text']}>Npm</span>
+        <span className={styleHomePage['container--content__cta--link-text']}>Npm</span>
       </a>
       <a
         href="https://github.com/srtager555/wrapping-letters"
         target="_blank"
-        className={styleHomePage['HomePage--cta-link']}
+        className={styleHomePage['container--content__cta--link']}
       >
-        <span className={styleHomePage['HomePage--cta-link-text']}>GitHub</span>
+        <span className={styleHomePage['container--content__cta--link-text']}>GitHub</span>
       </a>
-      <a href="https://github.com/srtager555/wrapping-letters/issues" className={styleHomePage['HomePage--cta-link']}>
-        <span className={styleHomePage['HomePage--cta-link-text']}>Report a issue!</span>
+      <a
+        href="https://github.com/srtager555/wrapping-letters/issues"
+        className={styleHomePage['container--content__cta--link']}
+      >
+        <span className={styleHomePage['container--content__cta--link-text']}>Report a issue!</span>
       </a>
     </>
   );
