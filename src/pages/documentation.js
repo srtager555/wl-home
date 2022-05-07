@@ -1,5 +1,7 @@
 import { Documentation } from 'templates/documentation';
 
+import Head from 'next/head';
+
 export default function DocumentationPage({ callback, sideNavRef, setSLettersOpts }) {
   const props = {
     callback,
@@ -7,5 +9,12 @@ export default function DocumentationPage({ callback, sideNavRef, setSLettersOpt
     setSLettersOpts,
   };
 
-  return <Documentation {...props} />;
+  return (
+    <>
+      <Head>
+        <title>Documentation | WL 📦</title>
+      </Head>
+      <Documentation {...props} />
+    </>
+  );
 }
