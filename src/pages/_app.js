@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
   const [sLettersOpts, setSLettersOpts] = useState({});
   const [inPath, setInPath] = useState('');
 
-  function handleChangePath() {
+  function HandleChangePath() {
     useInPath(setInPath);
   }
 
@@ -29,10 +29,10 @@ function MyApp({ Component, pageProps }) {
         scrollPosition={scrollPosition}
         setSLettersOpts={setSLettersOpts}
         inPath={inPath}
-        callback={() => handleChangePath()}
+        callback={() => HandleChangePath()}
         {...pageProps}
       />
-      <Footer  />
+      <Footer />
     </>
   );
 }
