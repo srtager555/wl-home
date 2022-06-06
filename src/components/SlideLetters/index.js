@@ -36,17 +36,17 @@ export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
       setSlide6([Slide6[0], Slide6[1]]);
    }, [sLettersOpts]);
 
-   useEffect(() => {
-      arrSlide.forEach((element, index) => {
-         if (scrollPosition >= document.body.clientHeight - window.innerHeight * 1.5) {
-            if (element[0][0] === true) element[1]([true, true]);
-         } else if (scrollPosition < window.innerHeight / 10) {
-            if (element[0][0] === true) element[1]([true, true]);
-         } else {
-            if (element[0][0] === true) element[1]([true, false]);
-         }
-      });
-   }, [scrollPosition]);
+   // useEffect(() => {
+   //    arrSlide.forEach((element, index) => {
+   //       if (scrollPosition >= document.body.clientHeight - window.innerHeight * 1.5) {
+   //          if (element[0][0] === true) element[1]([true, true]);
+   //       } else if (scrollPosition < window.innerHeight / 10) {
+   //          if (element[0][0] === true) element[1]([true, true]);
+   //       } else {
+   //          if (element[0][0] === true) element[1]([true, false]);
+   //       }
+   //    });
+   // }, [scrollPosition]);
 
    return (
       <div className={`${style.container} ${style.container__SlideLetters}`}>
