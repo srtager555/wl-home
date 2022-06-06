@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+  reactStrictMode: false,
   env: {
     customKey: 'customKey',
   },
@@ -8,15 +8,15 @@ const nextConfig = {
     domains: ['i.ibb.co'],
   },
   compress: true,
-  async redirects() {
-    return [
-      {
-        source: '/documentation',
-        destination: '/',
-        permanent: true,
-      }
-    ]
-  }
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: '/documentation',
+  //       destination: '/',
+  //       permanent: true,
+  //     }
+  //   ]
+  // }
 }
 
 module.exports = nextConfig

@@ -2,8 +2,7 @@ import { useEffect } from "react";
 
 import styles from "@styles/outOfService.module.sass";
 
-export function OutOfService({ setSLettersOpts = {}, callback }) {
-  callback();
+export function OutOfService({ setSLettersOpts = {} }) {
 
   const lettersState = {
     Slide1: [true, false],

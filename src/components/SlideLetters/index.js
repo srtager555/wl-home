@@ -1,22 +1,13 @@
 import { useState, useEffect } from "react";
 import style from "@styles/SlideLetters.module.scss";
 
-export function SlideLetters({ sLettersOpts = {}, scrollPosition }) {
+export function SlideLetters({ sLettersOpts = {} }) {
    const [slide1, setSlide1] = useState([false, false]);
    const [slide2, setSlide2] = useState([false, false]);
    const [slide3, setSlide3] = useState([false, false]);
    const [slide4, setSlide4] = useState([false, false]);
    const [slide5, setSlide5] = useState([false, false]);
    const [slide6, setSlide6] = useState([false, false]);
-
-   const arrSlide = [
-      [slide1, setSlide1],
-      [slide2, setSlide2],
-      [slide3, setSlide3],
-      [slide4, setSlide4],
-      [slide5, setSlide5],
-      [slide6, setSlide6],
-   ];
 
    const {
       Slide1 = [],

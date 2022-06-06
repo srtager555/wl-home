@@ -1,74 +1,74 @@
-import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
+import React from 'react';
+// import Link from 'next/link';
 
-import style from '@styles/Navbar.module.scss';
-import sideBarStyle from '@styles/SideBarDocs.module.scss';
+// import style from '@styles/Navbar.module.scss';
+// import sideBarStyle from '@styles/SideBarDocs.module.scss';
 
-export function Navbar({ path, scrollPosition, sideNavRef }) {
-  const [navState, setNavState] = useState('default');
-  const [isVisible, setIsVisible] = useState(false);
-  const [openMobileMenu, setOpenMobileMenu] = useState(false);
+export function Navbar() {
+  // const [navState, setNavState] = useState('default');
+  // const [isVisible, setIsVisible] = useState(false);
+  // const [openMobileMenu, setOpenMobileMenu] = useState(false);
 
-  function navContent(navState) {
-    return navState;
-  }
+  // function navContent(navState) {
+  //   return navState;
+  // }
 
-  function handleActiveMobileMenu() {
-    setOpenMobileMenu(!openMobileMenu);
-  }
+  // function handleActiveMobileMenu() {
+  //   setOpenMobileMenu(!openMobileMenu);
+  // }
 
-  const a = (
-    <>
-      <a href="https://github.com/srtager555/wrapping-letters" target="_blanks">
-        GitHub
-      </a>
-      <a href="https://www.npmjs.com/package/wrapping-letters-react" target="_blank">
-        NPM
-      </a>
-    </>
-  );
+  // const a = (
+  //   <>
+  //     <a href="https://github.com/srtager555/wrapping-letters" target="_blanks">
+  //       GitHub
+  //     </a>
+  //     <a href="https://www.npmjs.com/package/wrapping-letters-react" target="_blank">
+  //       NPM
+  //     </a>
+  //   </>
+  // );
 
-  const b = (
-    <>
-      <a href="https://github.com/srtager555/wrapping-letters" target="_blanks">
-        GitHub
-      </a>
-      <Link href="/docs">
-        <a>Documentation</a>
-      </Link>
-    </>
-  );
+  // const b = (
+  //   <>
+  //     {/* <a href="https://github.com/srtager555/wrapping-letters" target="_blanks">
+  //       GitHub
+  //     </a> */}
+  //     <Link href="/docs">
+  //       <a>Documentation</a>
+  //     </Link>
+  //   </>
+  // );
 
-  useEffect(() => {
-    if (path === '/') {
-      if (scrollPosition >= document.body.clientHeight - window.innerHeight) setIsVisible(false);
-      else if (scrollPosition > window.innerHeight) setIsVisible(true);
-      else setIsVisible(false);
-    }
-  }, [scrollPosition]);
+  // useEffect(() => {
+  //   if (path === '/') {
+  //     if (scrollPosition >= document.body.clientHeight - window.innerHeight) setIsVisible(false);
+  //     else if (scrollPosition > window.innerHeight) setIsVisible(true);
+  //     else setIsVisible(false);
+  //   }
+  // }, [scrollPosition]);
 
-  useEffect(() => {
-    switch (path) {
-      case '/':
-        setNavState(b);
-        setIsVisible(false);
-        break;
+  // useEffect(() => {
+  //   switch (path) {
+  //     case '/':
+  //       setNavState(b);
+  //       setIsVisible(false);
+  //       break;
 
-      case '':
-        setNavState(b);
-        setIsVisible(false);
-        break;
+  //     case '':
+  //       setNavState(b);
+  //       setIsVisible(false);
+  //       break;
 
-      default:
-        setNavState(a);
-        setIsVisible(true);
-        break;
-    }
-  }, [path]);
+  //     default:
+  //       setNavState(a);
+  //       setIsVisible(true);
+  //       break;
+  //   }
+  // }, [path]);
 
   return (
     <>
-      <nav
+      {/* <nav
         className={`${style['navbar-container']} ${isVisible ? style.show : ''}${path != '/' ? ` ${style.docs}` : ''} `}
       >
         {path === '/' ? (
@@ -81,7 +81,7 @@ export function Navbar({ path, scrollPosition, sideNavRef }) {
           </Link>
         )}
         <div className={style['navbar-container__content']}>
-          {/* <Link href="">Getting started</Link> */}
+          {/* <Link href="">Getting started</Link>
           {navContent(navState)}
           <div
             className={`${style['navbar-menu__button']} ${openMobileMenu ? style.active : ''}`}
@@ -113,7 +113,7 @@ export function Navbar({ path, scrollPosition, sideNavRef }) {
             </div>
           </div>
         </div>
-      ) : null}
+      ) : null} */}
     </>
   );
 }

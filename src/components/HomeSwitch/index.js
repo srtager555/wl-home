@@ -1,12 +1,12 @@
 import { useRef, useEffect } from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 
-import { useCopy } from '@hooks/useCopy';
+// import { useCopy } from '@hooks/useCopy';
 
-import styleHomePage from '@styles/HomePage.module.scss';
+// import styleHomePage from '@styles/HomePage.module.scss';
 
-export function HomeSwitch({ bottom = false }) {
-  const buttonCopyRef = useRef(null);
+export function HomeSwitch() {
+  // const buttonCopyRef = useRef(null);
   const contentRef = useRef(null);
 
   function handleObserProjects(entries) {
@@ -37,7 +37,7 @@ export function HomeSwitch({ bottom = false }) {
 
   return (
     <>
-      <div ref={contentRef} className={`${styleHomePage['container--content']}`}>
+      {/* <div ref={contentRef} className={`${styleHomePage['container--content']}`}>
         <div className={styleHomePage['container--content__main']}>
           <div
             className={
@@ -51,7 +51,7 @@ export function HomeSwitch({ bottom = false }) {
               <p>
                 {!bottom
                   ? `Wrapp any text in your projects in React with Wrapping Letters,
-               Hover effect, Observer intersection, loading animation and more!
+               Hover effect, Observer intersection, loading animation and more!
                Forget to wrapping any letters in JSX, wrapping letters will do
                it for you.`
                   : `Are you ready?, this is the next level to work with letters.`}
@@ -87,7 +87,7 @@ function topLinks() {
     <>
       {/* <Link href="docs/getting-started" className={styleHomePage["container--content__cta--link"]}>
             <span className={styleHomePage["container--content__cta--link-text"]}>Getting Started</span>
-         </Link> */}
+         </Link> 
       <Link href="/documentation">
         <a className={styleHomePage['container--content__cta--link']}>
           <span className={styleHomePage['container--content__cta--link-text']}>Documentation</span>
@@ -108,20 +108,21 @@ function topLinks() {
     </>
   );
 }
-function bottomLinks() {
-  return (
-    <>
-      {/* <Link href="docs/getting-started" className={styleHomePage["container--content__cta--link"]}>
+// function bottomLinks() {
+  // return (
+    // <>
+    {/*
+      <Link href="docs/getting-started" className={styleHomePage["container--content__cta--link"]}>
             <span className={styleHomePage["container--content__cta--link-text"]}>Getting Started</span>
-         </Link> */}
+         </Link>
       <Link href="/documentation">
         <a className={styleHomePage['container--content__cta--link']}>
           <span className={styleHomePage['container--content__cta--link-text']}>Documentation</span>
         </a>
       </Link>
-      {/* <Link href="docs/versions" className={styleHomePage["container--content__cta--link"]}>
+      <Link href="docs/versions" className={styleHomePage["container--content__cta--link"]}>
             <span className={styleHomePage["container--content__cta--link-text"]}>Versions</span>
-         </Link> */}
+         </Link>
       <a
         href="https://www.npmjs.com/package/wrapping-letters-react"
         target="_blank"
@@ -141,7 +142,8 @@ function bottomLinks() {
         className={styleHomePage['container--content__cta--link']}
       >
         <span className={styleHomePage['container--content__cta--link-text']}>Report a issue!</span>
-      </a>
-    </>
-  );
-}
+      </a> 
+      */}
+    // </> 
+  // );
+// }

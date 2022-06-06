@@ -6,8 +6,8 @@ export function Footer() {
    return (
       <div className={style["container--main"]}>
          <div className={style["portfolio__image"]}>
-            <a href="https://ttager.page/" target="_blank">
-               <Image layout="fill" src="https://i.ibb.co/KjX78L4/Port-folio-TD.png" />
+            <a href="https://ttager.page/" target="_blank" rel="noreferrer">
+               <Image layout="fill" src="https://i.ibb.co/KjX78L4/Port-folio-TD.png" alt='Carlos && Ponce | Portfolio' />
             </a>
          </div>
          <div className={style["text--main"]}>
